@@ -430,6 +430,21 @@ textarea::placeholder {
     font-weight: 600;
     line-height: 120%;
   }
+  .additional {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 15.743px;
+    font-weight: 600;
+    line-height: 120%;
+  }
 }
 .email {
   display: -webkit-box;
