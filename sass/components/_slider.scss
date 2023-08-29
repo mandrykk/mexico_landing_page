@@ -1,0 +1,153 @@
+.slider {
+    &__btn-wrapp {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__btn {
+        cursor:pointer;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #D9D9D9;
+        border: none;
+        margin-right: 10px;
+    }
+
+    &__btn.active {
+        background: linear-gradient(149deg, #63D737 0%, #058048 100%);
+    }
+}
+
+.slide {
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.baner {
+    padding-top: 83px;
+
+    &__title {
+        margin-bottom:61px;
+        color: $main-text-color;
+        text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.60);
+        font-size: 43.557px;
+        font-style: italic;
+        font-weight: 900;
+        line-height: normal;
+    }
+
+    &__second {
+        margin-left: 75px;
+    }
+
+    &__third {
+        font-size: 56.624px;
+    }
+
+    &__subtitle {
+        margin-bottom: 29px;
+        color: $main-text-color;
+        text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.60);
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+    }
+
+    &__mobile-text {
+        display: none;
+    }
+
+    &__btn {
+        cursor: pointer;
+        position: relative;
+        overflow-x: hidden;
+        margin-bottom: 84px;
+        border-radius: 100px;
+        border: none;
+        background: linear-gradient(149deg, rgb(99, 215, 55) 0%, rgb(5, 128, 72) 100%);
+        padding: 13px 120px;
+        color: $main-text-color;
+        text-align: center;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 148.9%;
+        animation: blink 2s infinite;
+        transition: box-shadow 0.3s;
+
+        &:hover,
+        &:focus {
+            box-shadow: 0px 5px 15px 0px #55903e;
+            animation: none;
+        }
+    }
+
+    &__btn .flare {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 45px;
+        transform: skewX(-35deg);
+        animation: flareAnimation;
+        left: -150%;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+        animation: flareAnimation 2s infinite linear;
+            
+    }
+}
+
+@keyframes flareAnimation {
+    0% {
+        left: -150%;
+    }
+
+    100% {
+        left: 150%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .baner {
+        padding-top: 50px;
+
+        &__title {
+            margin-bottom: 24px;
+            font-size: 24.096px;
+            font-weight: 900;
+            line-height: normal;
+        }
+        &__btn {
+            margin-top: 20px;
+            margin-bottom: 465px;
+            padding: 8px 75px;
+            font-size: 22.531px;
+            font-weight: 600;
+            line-height: 148.9%
+        }
+
+        &__third {
+            font-size: 31.324px;
+            font-weight: 900;
+            line-height: normal;
+        }
+
+        &__subtitle {
+            display: none;
+        }
+
+        &__mobile-text {
+            display: flex;
+            text-align: center;
+            font-size: 15.743px;
+            font-weight: 600;
+            line-height: 120%
+        }
+    }
+}

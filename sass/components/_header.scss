@@ -1,0 +1,83 @@
+.header {
+    border: 1px solid #000;
+    background: linear-gradient(0deg, rgba(41, 59, 43, 1) -37.5%, #161A16 68%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    &__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    &__navigation > div {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    }
+
+    &__logo {
+    display: inline-block;
+    margin: 17px 0;
+    }
+
+    &__wrapp {
+        display: flex;
+        padding: 0;
+        margin: 0; 
+    }
+
+    &__link {
+        display: block;
+        padding: 17px 0;
+        color: $main-text-color;
+    }
+
+    &__text {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-decoration-line: underline;
+    
+        &:hover,
+        &:focus {
+            color: #63D737;
+        }
+    }
+
+    &__button {
+        cursor: pointer;
+        border: none;
+        padding: 5px 25px;
+        color: $main-text-color;
+        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+        background: linear-gradient(149deg, #63D737 0%, #058048 100%);
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        border-radius: 50px;
+
+        &:hover,
+        &:focus {
+            box-shadow: 0px 5px 15px 0px #1e480e;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        border: none;
+        box-shadow: none;
+    
+        &__text {
+            display: none;
+        }
+    
+        &__button {
+            text-shadow: none;
+            font-size: 10.667px;
+        }
+    }
+}

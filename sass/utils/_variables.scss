@@ -1,0 +1,69 @@
+/* Colors */
+$main-text-color: white;
+$additional-text-color: #293B2B;
+$main-background: rgba(41, 59, 43, 1);
+$slider: #D9D9D9;
+
+/* Fonts */
+$main-font-family: 'Inter', sans-serif;
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $main-font-family;
+    color: $main-background;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+textarea {
+    resize: none;
+
+    &::placeholder {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+    }
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Bold.otf') format('truetype');
+    font-weight: bold;
+    font-style: bold;
+}

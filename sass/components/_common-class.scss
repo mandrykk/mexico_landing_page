@@ -1,0 +1,37 @@
+.container {
+    padding-left: 370px;
+    padding-right: 370px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 120px 0;
+
+    &__title {
+        margin: 0;
+        padding: 0;
+        color: $main-text-color;
+        font-size: 64px;
+        font-weight: 300;
+        line-height: 64px;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding-left: 250px;
+        padding-right: 250px;
+        margin: 0 auto;
+    }
+}

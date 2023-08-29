@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mexico Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="header__block container">
+            <nav class="header__navigation">
+                <a href="./index.html" class="header__logo">
+                    <svg width="101.663" height="26">
+                        <use href="./images/symbol-defs.svg#icon-Logo"></use>
+                    </svg>
+                </a>
+                <div class="header__wrapp">
+                    <p>
+                        <a href="#" class="header__link header__text">Acceder</a>
+                    </p>
+                    <button class="header__link header__button">Regístrate</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner-section container" id="bannerSection">
+            <div class="deposito-info">
+                <p class="deposito-info__text">Deposito minimo</p>
+                <p class="deposito-info__text">500 MXN</p>
+            </div>
+        
+            <div class="slider">
+                <div class="slide active" data-bg="./images/banner-first.jpg">
+                    <div class="baner">
+                        <div class="baner__title">
+                            <p class="baner__descr">Bono de primer</p>
+                            <p class="baner__descr baner__second">depósito hasta</p>
+                            <p class="baner__descr baner__third">40 000 MXN</p>
+                        </div>
+                        <div class="baner__subtitle ">
+                            <p class="baner__text">COMBOBOOST<br> hasta el 100%</p>
+                            <p class="baner__text baner__last">en apuestas combinadas</p>
+                        </div>
+                        <p class="baner__mobile-text">COMBOBOOST hasta el 100% en apuestas combinadas</p>
+                        <div class="baner__main">
+                            <button class="baner__btn">Regístrate <span class="flare"></span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" data-bg="./images/banner-second.jpg">
+                    <div class="baner">
+                        <div class="baner__title">
+                            <p class="baner__descr">Bono de primer</p>
+                            <p class="baner__descr baner__second">depósito hasta</p>
+                            <p class="baner__descr baner__third">40 000 MXN</p>
+                        </div>
+                        <div class="baner__subtitle ">
+                            <p class="baner__text">Reembolso del 500%
+                            <br> en apuestas deportivas</p>
+                        </div>
+                        <div class="baner__main">
+                            <button class="baner__btn">Regístrate <span class="flare"></span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__btn-wrapp">
+                    <button id="prevBtn" class="slider__btn"></button>
+                    <button id="nextBtn" class="slider__btn"></button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="email container">
+            <a href="./index.html" class="email__logo">
+                <svg width="101.663" height="26">
+                    <use href="./images/symbol-defs.svg#icon-Logo"></use>
+                </svg>
+            </a>
+            <div class="email__input-with-button">
+                <input type="text" placeholder="Correo electronico" class="email__input">
+                <button class="email__btn">Suscríbete</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer container">
+        <ul class="footer__list">
+            <li class="footer__item">
+                <svg width="63" height="20" class="mobile-icon__visa">
+                    <use href="./images/symbol-defs.svg#icon-VISA"></use>
+                </svg>
+            </li>
+            <li class="footer__item">
+                <svg width="36.4" height="22.5" class="mobile-icon__mastercard">
+                    <use href="./images/symbol-defs.svg#icon-MASTERCARD"></use>
+                </svg>
+            </li>
+            <li class="footer__item">
+                <svg width="77" height="17" class="mobile-icon__amex">
+                    <use href="./images/symbol-defs.svg#icon-AMEX"></use>
+                </svg>
+            </li>
+            <li class="footer__item">
+                <svg width="88" height="26" class="mobile-icon__astropay">
+                    <use href="./images/symbol-defs.svg#icon-ASTROPAY"></use>
+                </svg>
+            </li>
+            <li class="footer__item">
+                <svg width="63" height="20.7" class="mobile-icon__skrill">
+                    <use href="./images/symbol-defs.svg#icon-SKRILL"></use>
+                </svg>
+            </li>
+            <li class="footer__item">
+                <svg width="119" height="21" class="mobile-icon__paysafe">
+                    <use href="./images/symbol-defs.svg#icon-PAYSAFE"></use>
+                </svg>
+            </li>
+            <li class="footer__item">
+                <svg width="84" height="21" class="mobile-icon__paysafe">
+                    <use href="./images/symbol-defs.svg#icon-ECOPAYZ"></use>
+                </svg>
+            </li>
+            <li class="footer__item">
+                <svg width="89" height="19" class="mobile-icon__bitcoin">
+                    <use href="./images/symbol-defs.svg#icon-BITCOIN"></use>
+                </svg>
+            </li>
+            <li class="footer__item">
+                <svg width="92" height="24" class="mobile-icon__litecoin">
+                    <use href="./images/symbol-defs.svg#icon-LITECOIN"></use>
+                </svg>
+            </li>
+            <li class="footer__item">
+                <svg width="113" height="29" class="mobile-icon__ethereum">
+                    <use href="./images/symbol-defs.svg#icon-ETHEREUM"></use>
+                </svg>
+            </li>
+            <li class="footer__item">
+                <svg width="82" height="24" class="mobile-icon__ripple">
+                    <use href="./images/symbol-defs.svg#icon-RIPPLE"></use>
+                </svg>
+            </li>
+            <li class="footer__item">
+                <svg width="82" height="23" class="mobile-icon__tether">
+                    <use href="./images/symbol-defs.svg#icon-TETHER"></use>
+                </svg>
+            </li>
+            <li class="footer__item">
+                <svg width="102" height="21" class="mobile-icon__cardano">
+                    <use href="./images/symbol-defs.svg#icon-CARDANO"></use>
+                </svg>
+            </li>
+            <li class="footer__item">
+                <svg width="97" height="21" class="mobile-icon__binance">
+                    <use href="./images/symbol-defs.svg#icon-BINANCE"></use>
+                </svg>
+            </li>
+            <li class="footer__item">
+                <svg width="116" height="27" class="mobile-icon__usdc">
+                    <use href="./images/symbol-defs.svg#icon-USDC"></use>
+                </svg>
+            </li>
+        </ul>
+
+        <a href="./index.html" class="footer__logo">
+            <svg width="101.663" height="26">
+                <use href="./images/symbol-defs.svg#icon-Logo"></use>
+            </svg>
+        </a>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

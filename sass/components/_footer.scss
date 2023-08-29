@@ -1,0 +1,131 @@
+.footer {
+    padding-top: 95px;
+    padding-bottom: 59px;
+    background-color: $main-background;
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__logo {
+        display: none;
+    }
+}
+
+.footer__item {
+    &:not(:last-child) {
+        margin-right: 46px;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding-top: 45px;
+        padding-bottom: 43px;
+
+        &__logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 43px;
+        }
+
+        &__list {
+            display: grid;
+            grid-template-columns: 1.2fr 1.2fr 1.2fr 1.2fr 1.5fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 17px 0px;
+            grid-auto-flow: row;   
+        }
+
+        &__item {
+            flex-basis: calc(33.33% - 16px);
+            text-align: center;
+        }
+
+        &__item {
+            &:not(:last-child) {
+            margin-right: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    .mobile-icon {
+        &__visa{
+            width: 33px;
+            height: 10px;
+        }
+
+        &__mastercard {
+            width: 19px;
+            height: 12px;
+        }
+
+        &__amex {
+            width: 40px;
+            height: 9px;
+        }
+
+        &__astropay {
+            width: 46px;
+            height: 13px;
+        }
+
+        &__skrill {
+            width: 33px;
+            height: 11px;
+        }
+
+        &__paysafe {
+            width: 64px;
+            height: 11px;
+        }
+
+        &__bitcoin {
+            width: 46px;
+            height: 10px;
+        }
+
+        &__litecoin {
+            width: 48px;
+            height: 12px;
+        }
+
+        &__ethereum {
+            width: 71px;
+            height: 18px;
+        }
+
+        &__ripple {
+            width: 47px;
+            height: 14px;
+        }
+
+        &__tether {
+            width:50px;
+            height: 14px;
+        }
+        
+        &__cardano {
+            width: 64px;
+            height: 12px;
+        }
+
+        &__binance {
+            width: 60px;
+            height: 12px;
+        }
+
+        &__usdc {
+            width: 63px;
+            height: 16px;
+        }
+    }
+}
+}
